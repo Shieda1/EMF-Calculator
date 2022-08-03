@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMF Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="electromotiveForceRadio" name="variables" checked>
+  <label for="electromotiveForceRadio">Electromotive Force</label>
+
+  <input type="radio" id="currentRadio" name="variables">
+  <label for="currentRadio">Current</label>
+
+  <input type="radio" id="resistenceOfLoadinCircuitRadio" name="variables">
+  <label for="resistenceOfLoadinCircuitRadio">Resistence of Load in Circuit</label>
+
+  <input type="radio" id="internalResitanceofCellRadio" name="variables">
+  <label for="internalResitanceofCellRadio">Internal Resitance of Cell</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">(I) Current (amps)</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">(R) Resistence Of Load In Circuit (ohms)</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">(r) Internal Resitance of Cell (ohms)</label>
+  <input type="number" id="v3"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
